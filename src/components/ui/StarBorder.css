@@ -1,0 +1,120 @@
+.star-border-container {
+  display: inline-flex;
+  align-items: stretch;
+  position: relative;
+  border-radius: var(--btn-radius, 8px);
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.border-gradient-bottom,
+.border-gradient-top {
+  position: absolute;
+  width: 300%;
+  height: 50%;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  animation-play-state: paused;
+}
+
+.border-gradient-bottom {
+  bottom: -12px;
+  right: -250%;
+  animation: star-movement-bottom linear infinite alternate;
+}
+
+.border-gradient-top {
+  top: -12px;
+  left: -250%;
+  animation: star-movement-top linear infinite alternate;
+}
+
+.star-border-container:hover .border-gradient-bottom,
+.star-border-container:hover .border-gradient-top {
+  opacity: 0.95;
+  visibility: visible;
+  animation-play-state: running;
+}
+
+.inner-content {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: var(--btn-radius, 8px);
+  z-index: 1;
+}
+
+.star-border-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--btn-height);
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.star-border-inner.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-radius: var(--btn-radius);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.star-border-inner.btn-primary:hover {
+  background-color: var(--primary-active);
+}
+
+.star-border-inner.btn-secondary {
+  background-color: var(--canvas);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: var(--btn-radius);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.star-border-inner.btn-secondary:hover {
+  background-color: var(--surface-soft);
+}
+
+@keyframes star-movement-bottom {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-100%, 0%);
+  }
+}
+
+@keyframes star-movement-top {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(100%, 0%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .border-gradient-bottom,
+  .border-gradient-top {
+    animation: none;
+  }
+
+  .star-border-container:hover .border-gradient-bottom,
+  .star-border-container:hover .border-gradient-top {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
