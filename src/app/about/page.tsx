@@ -18,7 +18,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="container about-layout">
           <div>
-            <p className="body-md about-copy-lead">
+            <p className="body-lg about-copy-lead">
               The Al-Noor Group of Industries is a leading group in the country engaged in diversified business activities including manufacturing of galvanized steel sheets (CI sheets) at Kanchpur, about 25 km from Dhaka, alongside sister concerns Al-Noor Edible Oils Ltd., Al-Noor Paper &amp; Board Mills Ltd., and M/S. H R Printers &amp; Paper Seller in the same complex.
             </p>
             <p className="body-md about-copy">

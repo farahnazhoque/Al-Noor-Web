@@ -88,6 +88,86 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+/*
+  Type roles (use these classes site-wide):
+  - display-lg  → page H1 / hero title
+  - title-lg    → section H2
+  - title-md    → card / panel H3
+  - title-sm    → minor H4 / compact labels
+  - body-lg     → lead under a page title
+  - body-md     → default body copy
+  - body-sm     → secondary / supporting copy
+  - eyebrow     → uppercase section labels
+*/
+.display-lg,
+h1.display-lg {
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 600;
+}
+
+.title-lg,
+h2.title-lg {
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+.title-md,
+h3.title-md {
+  font-size: clamp(17px, 1.5vw, 20px);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+}
+
+.title-sm,
+h4.title-sm {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.body-lg {
+  font-size: clamp(17px, 1.4vw, 18px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.body-md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.body-sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.eyebrow,
+.page-header-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Back-compat aliases → canonical roles */
+.display-xl,
+.display-md,
+.display-sm {
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
   color: var(--ink);
@@ -98,17 +178,6 @@ button {
   cursor: pointer;
   border: none;
 }
-
-/* Typography Scale */
-.display-xl { font-size: clamp(48px, 6vw, 72px); line-height: 1; letter-spacing: -2.5px; }
-.display-lg { font-size: clamp(40px, 5vw, 56px); line-height: 1.05; letter-spacing: -2px; }
-.display-md { font-size: clamp(32px, 4vw, 40px); line-height: 1.1; letter-spacing: -1px; }
-.display-sm { font-size: clamp(26px, 5vw, 32px); line-height: 1.15; letter-spacing: -0.5px; }
-.title-lg { font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: -0.3px; }
-.title-md { font-size: 18px; font-weight: 600; line-height: 1.4; }
-.title-sm { font-size: 16px; font-weight: 600; line-height: 1.4; }
-.body-md { font-size: 16px; font-weight: 400; line-height: 1.55; }
-.body-sm { font-size: 14px; font-weight: 400; line-height: 1.55; }
 
 /* Components */
 .btn-primary,
@@ -305,7 +374,6 @@ button {
 
 .footer-grid h4 {
   margin-bottom: 16px;
-  color: var(--ink);
 }
 
 .footer-grid p {
@@ -396,9 +464,8 @@ button {
 }
 
 .hero-lead {
-  font-size: 20px;
   color: var(--muted);
-  max-width: 600px;
+  max-width: 640px;
 }
 .hero-buttons {
   display: flex;
@@ -474,8 +541,6 @@ button {
 
 .contact-card__address {
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.6;
   margin-bottom: 28px;
 }
 
@@ -587,12 +652,8 @@ button {
   border-bottom: 1px solid var(--hairline);
 }
 
+.page-header .page-header-eyebrow,
 .page-header-eyebrow {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: var(--muted);
   margin-bottom: 12px;
 }
 
@@ -600,7 +661,6 @@ button {
   margin-top: 16px;
   max-width: 720px;
   color: var(--muted);
-  font-size: 18px;
 }
 
 /* Product Catalog */
@@ -872,11 +932,6 @@ button {
 }
 
 .products-capabilities__eyebrow {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: var(--muted);
   margin-bottom: 12px;
 }
 
@@ -1116,9 +1171,7 @@ button {
 
 .product-bento__lead {
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 620px;
+  max-width: 640px;
   margin-bottom: 16px;
 }
 
@@ -1971,11 +2024,11 @@ button {
   gap: var(--spacing-sm);
 }
 .leader-role {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--primary);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 /* About Page */
@@ -1998,7 +2051,6 @@ button {
 
 .about-copy-lead {
   margin-bottom: 16px;
-  font-size: 18px;
 }
 
 .about-copy {
@@ -2056,20 +2108,12 @@ button {
     padding: 48px 0 var(--spacing-xl);
   }
 
-  .page-header-description {
-    font-size: 16px;
-  }
-
   .hero-paths {
     min-height: auto;
   }
 
   .hero-paths .hero {
     padding: 32px 0 clamp(48px, 8vw, 72px);
-  }
-
-  .hero-lead {
-    font-size: 17px;
   }
 
   .hero-buttons {
@@ -2097,10 +2141,6 @@ button {
   .footer-copyright {
     margin-top: 40px;
     padding-top: 24px;
-  }
-
-  .product-bento__lead {
-    font-size: 16px;
   }
 
   .product-bento__actions {
@@ -2137,10 +2177,6 @@ button {
 
   .about-card:nth-child(even) {
     margin-top: 0;
-  }
-
-  .about-copy-lead {
-    font-size: 16px;
   }
 
   .leadership-grid {

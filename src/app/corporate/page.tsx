@@ -37,15 +37,15 @@ export default function CorporatePage() {
         </div>
 
         <div style={{ marginBottom: '32px' }}>
-          <h3 className="display-sm" style={{ marginBottom: '8px' }}>Brief Profile of the Sponsors</h3>
-          <p className="body-md" style={{ color: 'var(--muted)', maxWidth: '760px' }}>
+          <h2 className="title-lg" style={{ marginBottom: '8px' }}>Brief Profile of the Sponsors</h2>
+          <p className="body-lg" style={{ color: 'var(--muted)', maxWidth: '760px' }}>
             Each member of the current management team is well educated, with years of experience in manufacturing industry and a strong track record of consistent growth and excellent financial results.
           </p>
         </div>
         <div className="leadership-grid">
           <div className="leader-card">
             <span className="leader-role">Chairman</span>
-            <h3 className="title-lg">Mr. Md. Fazlul Hoque</h3>
+            <h3 className="title-md">Mr. Md. Fazlul Hoque</h3>
             <p className="body-sm" style={{ color: 'var(--muted)' }}>
               Born June 01, 1972 at Bikrampur, Munshiganj. Post-Graduate in Marketing from University of Dhaka. Chairman and co-founder of Al-Noor Steel Complex Ltd.; Managing Director of Al-Noor Agro Industries Ltd., Al-Noor Paper &amp; Board Mills Ltd., Al-Noor Edible Oils Ltd., Al-Noor Development Ltd., and Al-Noor Address Ltd.; Chairman of Makka Paper and Board Mills Ltd. and FAMS Agro Industries Ltd.
             </p>
@@ -55,7 +55,7 @@ export default function CorporatePage() {
           </div>
           <div className="leader-card">
             <span className="leader-role">Director</span>
-            <h3 className="title-lg">Mr. Md. Ariful Hoque</h3>
+            <h3 className="title-md">Mr. Md. Ariful Hoque</h3>
             <p className="body-sm" style={{ color: 'var(--muted)' }}>
               Born July 01, 1980 at Bikrampur, Munshiganj. MBA in Human Resource Management from Victoria University, Melbourne. Director of Al-Noor Steel Complex Ltd.; Managing Director of Makka Paper and Board Mills Ltd. and FAMS Agro Industries Ltd.; Chairman of Al-Noor Development Ltd.; Deputy Managing Director of Al-Noor Address Ltd.; and Director of Al-Noor Paper &amp; Board Mills Ltd., Al-Noor Edible Oils Ltd., and Al-Noor Agro Industries Ltd.
             </p>

@@ -9,9 +9,9 @@ export default function ProductsHero() {
     <FloatingPathsBackground position={1} className="products-paths">
       <section className="container products-hero">
         <div className="hero-content hero-content-glass products-hero__copy">
-          <span className="body-sm page-header-eyebrow">Catalog &amp; Technical Specifications</span>
+          <span className="eyebrow page-header-eyebrow">Catalog &amp; Technical Specifications</span>
           <h1 className="display-lg">Paper Grades Produced</h1>
-          <p className="body-md hero-lead">
+          <p className="body-lg hero-lead">
             A complete breakdown of Al-Noor Paper &amp; Board Mills Ltd. offerings across printing,
             newsprint, medium, kraft, liner, fluting, and specialty grades.
           </p>

@@ -116,9 +116,9 @@ export default function ProductsCatalog() {
       <section className="products-capabilities section">
         <div className="container">
           <header className="products-capabilities__header" data-reveal>
-            <span className="body-sm products-capabilities__eyebrow">Manufacturing at scale</span>
+            <span className="eyebrow products-capabilities__eyebrow">Manufacturing at scale</span>
             <h2 className="title-lg">Production &amp; Facility Capabilities</h2>
-            <p className="body-md products-capabilities__lead">
+            <p className="body-lg products-capabilities__lead">
               ISO-certified production with dedicated warehousing and export-ready packaging standards.
             </p>
           </header>
@@ -135,7 +135,7 @@ export default function ProductsCatalog() {
                 data-reveal
                 data-reveal-delay={String(index + 1)}
               >
-                <h3 className="title-sm">{item.label}</h3>
+                <h3 className="title-md">{item.label}</h3>
                 <p className="body-sm">{item.value}</p>
               </div>
             ))}

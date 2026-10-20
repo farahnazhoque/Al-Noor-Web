@@ -5,8 +5,8 @@ export default function PartnerTicker() {
     <section className="section partner-ticker-section" style={{ borderTop: '1px solid var(--hairline)', borderBottom: '1px solid var(--hairline)' }}>
       <div className="container">
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <span className="body-sm" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 600, color: 'var(--muted)' }}>Trusted Supply Partners</span>
-          <h3 className="title-lg" style={{ marginTop: '8px' }}>Serving Leading Institutions &amp; Newspapers</h3>
+          <span className="eyebrow">Trusted Supply Partners</span>
+          <h2 className="title-lg" style={{ marginTop: '8px' }}>Serving Leading Institutions &amp; Newspapers</h2>
         </div>
       </div>
       <div className="partner-ticker" aria-label="Trusted supply partners">

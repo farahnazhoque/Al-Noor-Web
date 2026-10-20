@@ -129,8 +129,8 @@ export default function ProductBento({ product }: ProductBentoProps) {
         <header className="product-bento__header" data-reveal>
           <div className="product-bento__header-copy">
             <span className="product-bento__pill">{category?.title ?? 'Paper Grade'}</span>
-            <h1 className="display-md">{product.name}</h1>
-            <p className="body-md product-bento__lead">{product.description}</p>
+            <h1 className="display-lg">{product.name}</h1>
+            <p className="body-lg product-bento__lead">{product.description}</p>
             <div className="product-bento__highlights">
               <span className="product-bento__highlight-tag">{product.highlight}</span>
               <span className="product-bento__highlight-tag">{catalogOverview.certification}</span>

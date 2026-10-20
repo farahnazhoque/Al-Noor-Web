@@ -55,8 +55,8 @@ export default function HeroSection() {
             },
           }}
         >
-          <h1 className="display-xl">Pioneers in Paper &amp; Board Manufacturing Across Bangladesh</h1>
-          <p className="body-md hero-lead">
+          <h1 className="display-lg">Pioneers in Paper &amp; Board Manufacturing Across Bangladesh</h1>
+          <p className="body-lg hero-lead">
             Al-Noor Paper &amp; Board Mills Ltd. is a sister concern of the Al-Noor Group of Industries, delivering white paper, newsprint, offset paper, and printing paper from our Kanchpur manufacturing complex.
           </p>
           <div className="hero-buttons">
