@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "cloudflare-build": "opennextjs-cloudflare build",
-    "preview": "npm run cloudflare-build && opennextjs-cloudflare preview",
-    "deploy": "npm run cloudflare-build && wrangler deploy"
+    "preview": "yarn cloudflare-build && opennextjs-cloudflare preview",
+    "deploy": "yarn cloudflare-build && wrangler deploy",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:deploy": "wrangler deploy"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.20.1",
@@ -30,7 +32,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.86.0"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
