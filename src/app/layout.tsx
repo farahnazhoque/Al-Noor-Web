@@ -9,7 +9,7 @@ const siteDescription =
   'Al-Noor Group manufactures white paper, newsprint, offset paper, kraft, liner, and specialty grades through Al-Noor Paper & Board Mills Ltd. and sister concerns across Bangladesh.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://alnoorbc.site'),
+  metadataBase: new URL('https://alnoorbd.site'),
   title: {
     default: `${siteName} | Al-Noor Group of Industries`,
     template: `%s | ${siteName}`,
