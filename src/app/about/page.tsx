@@ -3,7 +3,7 @@ import StarBorderButton from '@/components/StarBorderButton';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata: Metadata = {
-  title: 'About | Al-Noor Paper & Board Mills Ltd.',
+  title: 'About',
   description: 'Learn about the Al-Noor Group of Industries and its diversified manufacturing operations across Bangladesh.',
 };
 

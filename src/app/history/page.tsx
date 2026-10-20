@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader';
 import { historyMilestones } from '@/lib/content';
 
 export const metadata: Metadata = {
-  title: 'History | Al-Noor Paper & Board Mills Ltd.',
+  title: 'History',
   description: 'The history of Al-Noor Group of Industries from 1964 to today.',
 };
 

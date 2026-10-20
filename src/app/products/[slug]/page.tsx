@@ -20,8 +20,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   }
 
   return {
-    title: `${product.name} | Al-Noor Paper & Board Mills Ltd.`,
+    title: product.name,
     description: product.shortDescription,
+    openGraph: {
+      title: product.name,
+      description: product.shortDescription,
+      images: [{ url: product.image, alt: product.imageAlt }],
+    },
   };
 }
 

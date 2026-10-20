@@ -4,7 +4,7 @@ import ProductsCatalog from '@/components/ProductsCatalog';
 import ProductsHero from '@/components/ProductsHero';
 
 export const metadata: Metadata = {
-  title: 'Products | Al-Noor Paper & Board Mills Ltd.',
+  title: 'Products',
   description: 'Catalog and technical specifications for white printing paper, news printing paper, medium paper, kraft paper, test liner, fluting medium, and specialty grades.',
 };
 

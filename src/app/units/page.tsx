@@ -3,7 +3,7 @@ import Image from 'next/image';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata: Metadata = {
-  title: 'Units | Al-Noor Paper & Board Mills Ltd.',
+  title: 'Units',
   description: 'Manufacturing units and sister concerns of the Al-Noor Group including Kanchpur, Bhulta, and Madina Board Mills.',
 };
 

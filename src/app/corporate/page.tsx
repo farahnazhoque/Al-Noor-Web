@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 
 export const metadata: Metadata = {
-  title: 'Corporate | Al-Noor Paper & Board Mills Ltd.',
+  title: 'Corporate',
   description: 'Mission, vision, group management, and leadership profiles of the Al-Noor Group of Industries.',
 };
 

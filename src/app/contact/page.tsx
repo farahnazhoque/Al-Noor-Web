@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ContactSection from '@/components/ContactSection';
 
 export const metadata: Metadata = {
-  title: 'Contact | Al-Noor Paper & Board Mills Ltd.',
+  title: 'Contact',
   description: 'Contact Al-Noor Paper & Board Mills Ltd. head office in Dhaka and factory in Kanchpur, Sonargaon, Narayanganj.',
 };
 
